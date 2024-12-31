@@ -8,6 +8,7 @@ const pushForce = 9.5; // Arbitrary upward force scaled for realism
 let velocity = 0;
 let positionY = 0;
 let isClicking = false;
+let experimentEnded = false;
 
 function update_position() {
   if (!isClicking) {
@@ -27,10 +28,24 @@ function update_position() {
   if (positionY >= window.innerHeight - 32) {
     positionY = window.innerHeight - 32;
     velocity = 0;
-    window.alert("Experiment has ended! The dot hit the bottom.");
+    experimentEnded = true;
+    restart_experiment();
     return;
   }
   dot.style.transform = `translateY(${positionY}px)`;
+}
+
+function restart_experiment() {
+  const restart = prompt(
+    "O experimento terminou! Gostaria de reiniciar? (Sim/Não)",
+    "Sim"
+  );
+  if (restart && restart.toLowerCase() === "sim") {
+    window.location.reload();
+  } else {
+    alert("Obrigado por participar do experimento!");
+    window.close();
+  }
 }
 
 function handleMouseClick() { isClicking = true; }
