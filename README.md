@@ -2,7 +2,7 @@
 
 ## Gravidade: O Motor Fundamental
 
-A gravidade é a força responsável por puxar os corpos em direção ao centro da Terra. Na física clássica, sua intensidade é representada por g=9,8 m/s2g=9,8m/s2. Isso significa que, a cada segundo de queda, a velocidade de um objeto em queda livre aumenta 9,8 metros por segundo.
+A gravidade é a força responsável por puxar os corpos em direção ao centro da Terra. Na física clássica, sua intensidade é representada por g=9,8 m/s2g. Isso significa que, a cada segundo de queda, a velocidade de um objeto em queda livre aumenta 9,8 metros por segundo.
 
 No nosso experimento, adaptamos essa aceleração para um ambiente visual em pixels, utilizando o tempo decorrido entre cada atualização para calcular o incremento na velocidade. A fórmula básica utilizada é:
 
