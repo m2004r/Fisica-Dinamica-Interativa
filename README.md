@@ -10,8 +10,8 @@ No nosso experimento, adaptamos essa aceleração para um ambiente visual em pix
 
 Aqui:
 
-    vv é a velocidade atual.
-    gg é a aceleração gravitacional.
+    v é a velocidade atual.
+    g é a aceleração gravitacional.
     Δt é o intervalo de tempo entre as atualizações (neste caso, 16 milissegundos).
 
 Esse cálculo assegura que a velocidade aumenta de maneira proporcional ao tempo, exatamente como ocorre no mundo real.
@@ -39,7 +39,7 @@ Quando você clica, aplicamos uma força oposta à gravidade para empurrar o pon
 
 Aqui:
 
-    vv é a velocidade atual.
+    v é a velocidade atual.
     Fpush​ é a força gerada pelo clique, que subtrai da velocidade atual, invertendo momentaneamente o movimento.
 
 No mundo real, isso é equivalente a um foguete ou balão que aplica uma força ascendente para vencer a gravidade.
@@ -52,9 +52,9 @@ A posição do ponto é atualizada com base na velocidade, respeitando o interva
 
 Aqui:
 
-    yy é a posição vertical do ponto.
-    vv é a velocidade atual.
-    ΔtΔt é o intervalo de tempo.
+    y é a posição vertical do ponto.
+    v é a velocidade atual.
+    Δt é o intervalo de tempo.
 
 Essa fórmula garante que o movimento do ponto seja contínuo e suave.
 
