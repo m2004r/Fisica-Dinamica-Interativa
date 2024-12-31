@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+}
+
+#dot {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
