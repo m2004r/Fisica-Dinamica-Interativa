@@ -7,13 +7,12 @@ A gravidade é a força responsável por puxar os corpos em direção ao centro 
 No nosso experimento, adaptamos essa aceleração para um ambiente visual em pixels, utilizando o tempo decorrido entre cada atualização para calcular o incremento na velocidade. A fórmula básica utilizada é:
 
     v=v+g⋅Δt
-    v=v+g⋅Δt
 
 Aqui:
 
     vv é a velocidade atual.
     gg é a aceleração gravitacional.
-    ΔtΔt é o intervalo de tempo entre as atualizações (neste caso, 16 milissegundos).
+    Δt é o intervalo de tempo entre as atualizações (neste caso, 16 milissegundos).
 
 Esse cálculo assegura que a velocidade aumenta de maneira proporcional ao tempo, exatamente como ocorre no mundo real.
 
@@ -25,7 +24,6 @@ Para simular isso, definimos um limite para a velocidade no experimento:
 
 
     v=min⁡(v+g⋅Δt,vterminal)
-    v=min(v+g⋅Δt,vterminal​)
 
 Nesse caso, `vterminal` é um valor arbitrário que representa a máxima velocidade que o ponto pode atingir. No mundo real, a velocidade terminal depende de fatores como:
 
@@ -38,12 +36,11 @@ Nesse caso, `vterminal` é um valor arbitrário que representa a máxima velocid
 Quando você clica, aplicamos uma força oposta à gravidade para empurrar o ponto para cima. A fórmula usada é:
 
     v=v−Fpush
-    v=v−Fpush​
 
 Aqui:
 
     vv é a velocidade atual.
-    FpushFpush​ é a força gerada pelo clique, que subtrai da velocidade atual, invertendo momentaneamente o movimento.
+    Fpush​ é a força gerada pelo clique, que subtrai da velocidade atual, invertendo momentaneamente o movimento.
 
 No mundo real, isso é equivalente a um foguete ou balão que aplica uma força ascendente para vencer a gravidade.
 
@@ -51,7 +48,6 @@ No mundo real, isso é equivalente a um foguete ou balão que aplica uma força 
 
 A posição do ponto é atualizada com base na velocidade, respeitando o intervalo de tempo entre cada quadro:
 
-    y=y+v⋅Δt
     y=y+v⋅Δt
 
 Aqui:
