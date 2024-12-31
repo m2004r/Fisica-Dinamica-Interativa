@@ -36,10 +36,7 @@ function update_position() {
 }
 
 function restart_experiment() {
-  const restart = prompt(
-    "O experimento terminou! Gostaria de reiniciar? (Sim/Não)",
-    "Sim"
-  );
+  const restart = prompt("O experimento terminou! Gostaria de reiniciar? (Sim/Não)");
   if (restart && restart.toLowerCase() === "sim") {
     window.location.reload();
   } else {
