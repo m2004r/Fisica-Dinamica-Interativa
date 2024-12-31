@@ -45,5 +45,5 @@ function restart_experiment() {
   }
 }
 
-function handleMouseClick() { isClicking = true; }
-window.addEventListener("click", handleMouseClick); setInterval(update_position, timeInterval);
+function handle_mouse_click() { isClicking = true; }
+window.addEventListener("click", handle_mouse_click); setInterval(update_position, timeInterval);
